@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="https://via.placeholder.com/150" alt="Student Photo">
+			</div>
+			<div class="col-md-8">
+				<h1>Student Name</h1>
+				<form>
+					<div class="form-group">
+						<label for="semester">Choose Semester:</label>
+						<select class="form-control" id="semester">
+							<option>Semester 1</option>
+							<option>Semester 2</option>
+							<option>Semester 3</option>
+							<option>Semester 4</option>
+							<option>Semester 5</option>
+							<option>Semester 6</option>
+							<option>Semester 7</option>
+							<option>Semester 8</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Marks</h3>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Subject</th>
+							<th>Marks Obtained</th>
+							<th>Total Marks</th>
+							<th>Percentage</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Subject 1</td>
+							<td>85</td>
+							<td>100</td>
+							<td>85%</td>
+						</tr>
+						<tr>
+							<td>Subject 2</td>
+							<td>75</td>
+							<td>100</td>
+							<td>75%</td>
+						</tr>
+						<tr>
+							<td>Subject 3</td>
+							<td>90</td>
+							<td>100</td>
+							<td>90%</td>
+						</tr>
+						<tr>
+							<td>Subject 4</td>
+							<td>80</td>
+							<td>100</td>
+							<td>80%</td>
+						</tr>
+						<tr>
+							<td>Subject 5</td>
+							<td>95</td>
+							<td>100</td>
+							<td>95%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Graph</h3>
+				<canvas id="myChart"></canvas>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<!-- Popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/

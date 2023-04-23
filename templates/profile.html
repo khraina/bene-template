@@ -1,0 +1,117 @@
+<!DOCTYPE html >
+
+<html>
+    
+<head>
+    <title> Teacher </title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="https://unsplash.com/photos/HH4WBGNyltc" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="static/css/styles.css" rel="stylesheet" />
+
+   
+</head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" id="home" href="/">Home</a>
+          <a class="nav-item nav-link" id="upload" href="/profile">Upload</a>
+          <a class="nav-item nav-link" id="View" href="/view">View</a>
+          
+          <a class="nav-item nav-link" id="logout" href="/"  class="btn btn-primary btn-sm"> Logout </a>
+          
+        </div>
+      </div>
+    </nav>
+        
+<div class ="container px-4 px-lg-5 h-50">
+    <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-end">
+            <div style="Text-align:center" >
+              <div class="col-md-6 offset-md-3 mt-5">
+                <form method="POST" enctype="multipart/form-data">
+                  <input type="file" name="file" accept=".csv">
+                  <button type="submit">Submit</button>
+                </form>
+        
+            </div>  
+                    <div class="dropdown">
+                        <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Name of batch
+                        </button>
+                        <label for="Name of batch"></label>
+                              <select id="batch" name="batch">
+                                <option value="volvo">6</option>
+                                <option value="saab">7</option>
+                                <option value="fiat">8</option>
+                                <option value="audi">9</option>
+                              </select>
+                              
+                    </div>
+                        
+                    <div class="dropdown">
+                        <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SEMSTER
+                        </button>
+                        <label for="Name of batch"></label>
+                        <select id="semester" name="semester">
+                          <option value="volvo">1</option>
+                          <option value="saab">2</option>
+                          <option value="fiat">3</option>
+                          <option value="audi">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                        </select>
+                       
+                    </div>
+                  <button type="button" class="btn btn-success" href='/view'>Submit</button>
+                </form>
+            </div> 
+        </div>
+    </div>
+</div>
+    <!-- Footer-->
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+     </body>
+</html>
